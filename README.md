@@ -15,6 +15,12 @@
 
 _{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
 
+## Tests
+
+Describe: Journal()
+Test: "It will create Journal instances with properties entries and currentId"
+Expect(let journal = newJournal()).toEqual(Journal { entries: {}, currentId: 0 })
+
 ## Setup/Installation Requirements
 
 * _This is a great place_
