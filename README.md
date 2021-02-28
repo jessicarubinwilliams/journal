@@ -17,9 +17,13 @@ _{This is a detailed description of your application. Give as much detail as nee
 
 ## Tests
 
-Describe: Journal()
+Test 1: Describe: Journal()
 Test: "It will create Journal instances with properties entries and currentId"
 Expect(let journal = newJournal()).toEqual(Journal { entries: {}, currentId: 0 })
+
+Test 2: Desribe: Entry(title, body)
+Test: "It will take two arguments, create Entry instances with properties with the keys "title" and "body", and assign the arguments to the two keys respectively"
+Expect(let entry = new Entry("Tuesday", "How I spent my day")).toEqual(Entry {title: "Tuesday", body: "How I spent my day"})
 
 ## Setup/Installation Requirements
 
