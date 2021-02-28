@@ -3,5 +3,7 @@ export default function Journal() {
   this.currentId = 0;
 }
 
-let journal = new Journal();
-console.log(journal);
+Journal.prototype.assignId = function() {
+  this.currentId += 1;
+  return this.currentId;
+}
